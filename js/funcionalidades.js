@@ -31,7 +31,7 @@ document.getElementById('formReserva').addEventListener('submit', function(e) {
       detalles: form.detalles.value
      };
 
-    fetch('https://script.google.com/macros/s/AKfycbwq-ZQe8P7zkoh6mTv1ce8STuWsYissPb-KtdoHcvg-5_9Xa48ce4lrXCdBIe0L2hP6/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbx996YoBftbA1vjz3CEua2U_S9PRjPvm_arDmemd9uqIOpEpcOIWlAq3cWoKbyqymjM/exec', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' }
@@ -61,7 +61,7 @@ document.getElementById('formAlquiler').addEventListener('submit', function(e) {
           detalles: form.detalles.value
       };
 
-    fetch('https://script.google.com/macros/s/AKfycbwq-ZQe8P7zkoh6mTv1ce8STuWsYissPb-KtdoHcvg-5_9Xa48ce4lrXCdBIe0L2hP6/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbx996YoBftbA1vjz3CEua2U_S9PRjPvm_arDmemd9uqIOpEpcOIWlAq3cWoKbyqymjM/exec', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' }
