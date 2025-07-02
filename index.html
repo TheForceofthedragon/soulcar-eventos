@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler de Autos para Eventos | SoulCar Eventos</title>
+    <meta name="description" content="Alquiler de autos de lujo para bodas, fiestas y eventos especiales. Vive una experiencia única con SoulCar Eventos.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <h1>SoulCar Eventos</h1>
+        <p>Más que transporte, una experiencia inolvidable</p>
+    </header>
+
+    <nav class="sticky">
+        <a href="#autos">Nuestros Autos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#reserva">Reserva</a>
+        <a href="#alquila">Alquila tu Auto</a>
+    </nav>
+
+    <section id="autos">
+        <h2>Nuestros Autos</h2>
+        <div class="swiper autos-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide auto-slide" onclick="mostrarModal('bmw')">
+                <div class="overlay-click">
+                    <img src="img/bmw-blanco.jpg" alt="BMW Blanco">
+                    <span class="ver-detalles">Ver más fotos</span>
+                </div>
+                <h3>BMW 535i Blanco</h3>
+                <p>Elegancia y potencia para momentos especiales.</p>
+                </div>
+                <div class="swiper-slide auto-slide" onclick="mostrarModal('camaro')">
+                <div class="overlay-click">
+                    <img src="img/camaro-azul.jpg" alt="Chevrolet Camaro azul">
+                    <span class="ver-detalles">Ver más fotos</span>
+                </div>
+                    <h3>Chevrolet Camaro Azul</h3>
+                    <p>Deportivo, vibrante y descapotable. Ideal para fiestas.</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios que Ofrecemos</h2>
+        <div class="card">
+            <p>✔ Matrimonios</p>
+            <p>✔ Fiestas privadas</p>
+            <p>✔ Quinceañeros</p>
+            <p>✔ Sesiones fotográficas</p>
+            <p>✔ Videos musicales</p>
+            <p>✔ Paseos y ocasiones especiales</p>
+        </div>
+    </section>
+
+    <section id="reserva">
+        <h2>Reserva tu Auto</h2>
+        <form id="formReserva">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="tel" name="telefono" placeholder="Teléfono de contacto" required>
+        <input type="date" name="fecha" required>
+        <select name="auto" required>
+            <option value="">Selecciona un auto</option>
+            <option value="BMW 535i Blanco">BMW 535i Blanco</option>
+            <option value="Chevrolet Camaro Azul">Chevrolet Camaro Azul</option>
+        </select>
+        <textarea name="detalles" placeholder="Dirección del evento o detalles adicionales"></textarea>
+        <button type="submit">Enviar Reserva</button>
+        </form>
+    </section>
+
+    <section id="alquila">
+        <h2>¿Quieres alquilar tu auto?</h2>
+        <p>Si tienes un vehículo especial para eventos, completa este formulario y te contactaremos.</p>
+        <form id="formAlquiler">
+        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <input type="tel" name="telefono" placeholder="Teléfono de contacto" required>
+        <input type="text" name="modelo" placeholder="Modelo y descripción del auto" required>
+        <textarea name="detalles" placeholder="Detalles adicionales (año, color, disponibilidad, etc)"></textarea>
+        <button type="submit">Enviar Propuesta</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-contacto">
+            <h3>Contáctame</h3>
+            <p>¿Tienes dudas? Escríbeme por mis redes:</p>
+            <div class="redes-sociales">
+                <a href="https://wa.me/+51956959100" target="_blank">
+                    <img src="img/whatsapp.png" alt="WhatsApp" width="32"> WhatsApp
+                </a>
+                <a href="https://instagram.com/soulcareventos" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram" width="32"> Instagram
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61578017005609" target="_blank">
+                    <img src="img/facebook.png" alt="Facebook" width="32"> Facebook
+                </a>
+            </div>
+        </div>
+        <p>&copy; 2025 SoulCar Eventos. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal Autos -->
+    <div id="modalAuto" class="modal">
+        <div class="modal-content" id="contenidoModal">
+            <span class="modal-close" onclick="cerrarModal()">&times;</span>
+            <!-- contenido dinámico -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/funcionalidades.js"></script>
+</body>
+</html>
