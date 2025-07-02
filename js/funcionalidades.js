@@ -33,6 +33,7 @@ document.getElementById('formReserva').addEventListener('submit', function(e) {
 
     fetch('https://script.google.com/macros/s/AKfycbx996YoBftbA1vjz3CEua2U_S9PRjPvm_arDmemd9uqIOpEpcOIWlAq3cWoKbyqymjM/exec', {
         method: 'POST',
+        mode: 'no-cors',
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' }
     })
@@ -63,6 +64,7 @@ document.getElementById('formAlquiler').addEventListener('submit', function(e) {
 
     fetch('https://script.google.com/macros/s/AKfycbx996YoBftbA1vjz3CEua2U_S9PRjPvm_arDmemd9uqIOpEpcOIWlAq3cWoKbyqymjM/exec', {
         method: 'POST',
+        mode: 'no-cors',
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'application/json' }
     })
