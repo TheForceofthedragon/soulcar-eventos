@@ -101,7 +101,7 @@ function mostrarModal(auto) {
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="img/bmw-blanco.jpg" alt="BMW Blanco"></div>
                     <div class="swiper-slide"><img src="img/bmw-lateral.jpg" alt="BMW Lateral"></div>
-                    <div class="swiper-slide"><img src="img/bmw-frontal.jpg" alt="BMW Frontal"></div>
+                    
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
@@ -115,7 +115,7 @@ function mostrarModal(auto) {
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="img/camaro-azul.jpg" alt="Camaro Azul"></div>
                     <div class="swiper-slide"><img src="img/camaro-frontal.jpg" alt="Camaro Frontal"></div>
-                    <div class="swiper-slide"><img src="img/camaro-costado.jpg" alt="Camaro Costado"></div>
+                    
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
